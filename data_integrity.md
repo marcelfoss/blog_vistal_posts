@@ -4,8 +4,8 @@ title = "Data Integrity"
 date = "2023-04-11"
 description = "A brief example description."
 tags = [
-    "shortcodes",
-    "privacy",
+    "data security",
+    "scripts",
 ]
 +++
 
@@ -15,3 +15,8 @@ Intro text
 ---
 
 More Text..
+
+``` SQL
+sqlite3 $filename".db" 'CREATE TABLE performance (algorithm TEXT, file_size TEXT, time REAL);'
+sqlite3 $filename".db" ".mode csv" ".import --skip 1 time_checksum.csv performance" ".exit"
+```
