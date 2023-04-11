@@ -16,7 +16,7 @@ Intro text
 
 More Text..
 
-``` SQL
+``` sh
 sqlite3 $filename".db" 'CREATE TABLE performance (algorithm TEXT, file_size TEXT, time REAL);'
 sqlite3 $filename".db" ".mode csv" ".import --skip 1 time_checksum.csv performance" ".exit"
 ```
