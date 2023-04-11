@@ -102,8 +102,8 @@ As we see, on my machine, SHA256 has nearly the same performance as SHA1, so the
 
 
 ## Conclusion
-When dealing with data, I need to rely on their integrity; I should make some consideration on how I want to archive this. It doesn't matter if these are my Excel files I use or other formats. Maybe I just perform my checks on archived data or I do automatised checks in form of scripts or on the file system level. Whatever you decide to do small errors will most likely occur at some point.  
-If you want to learn more or need help with this or any other (data)-related topics, feel free to send me a message on [LinkedIn](https://www.linkedin.com/in/marcel-e-peters/).
+When dealing with data, I need to rely on their integrity; I should make some consideration on how I want to archive this. It doesn't matter if these are Excel files or any other formats. Maybe I just perform my checks on archived data or I do automatised checks in form of scripts or on the file system level. Whatever you decide to do small errors will most likely occur at some point.  
+If you want to learn more or need help with this or any other (data)-related topics, then feel free to send me a message on [LinkedIn](https://www.linkedin.com/in/marcel-e-peters/).
 
 ## Reference Sources
 
