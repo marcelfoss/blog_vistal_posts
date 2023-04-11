@@ -45,7 +45,6 @@ There are many reasons for that. In general, nearly all media is affected by so 
 
 >With conventional hard drives, for example, wear and tear, extreme temperatures or the effects of electromagnetic radiation can cause individual bits to tilt. On flash-based storage media such as solid state drives (SSD), the loss of electrons in the storage cells is a possible cause of data rot. Optical data carriers such as CDs, DVDs or Blu-rays suffer from gradual data corruption, for example due to the ageing of the data carrier material used or from external mechanical damage impacts. [2]
 
-
 Modern server file systems calculated or make use of other techniques to check if the data integrity is still given. For the Linux operating doing this we have Btrfs; Free-BSD comes with its famous OpenZFS implementation and ReFS when we are talking Windows. Those file systems will digest the bit-stream, write the data to the media, and write the result of the digest as well on the media. If we are then trying to access the file, in the background, the operating system will do the same calculation and compare the results.[3],[4]
 If we have a look at the documentation for Btrfs for instance we see that there are several algorithms which we can use to compute those checksums. But why should we even bother with which to use?  
 Next to data collision, if we have two different inputs resulting in the same checksum,[5] we are more likely to have the same problem we wanted to mitigated in the first place. Performance on the other hand can also play a significant role as an higher impact on the CPU might lead to a less responsive system. But how likely is a collision?
@@ -88,6 +87,7 @@ After that we will aggregate the data and have a look on the result:
 | sha1      |       1K |           0.001 |
 | sha256    |       1K |           0.001 |
 | sha512    |       1K |           0.001 |
+_Figure 1: Performance results_
 
 As we see, on my machine, SHA256 has nearly the same performance as SHA1, so there is not really a reason to go _(Annotation by the Author: also broadly considered broken)_ with SHA1. Even MD5 is significant slower than SHA256 on my machine. If we would just have used the algorithm with the shortest checksum we would have had a slower algorithm used - although we might have expected to be the quickest. SHA512 and blake2b have a significant higher performance hit for larger files as well. In this scenario the balance (performance/result ratio) is in favour of SHA256 on my machine. Quick reminder, Gorka Remirez[6] found SHA1 to be 20% slower than MD5 which in fact does not apply to our findings here.
 
