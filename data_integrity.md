@@ -42,8 +42,7 @@ If we transform it in a more human-friendly form (decimal system): USD __16,785,
   
   
   
-   <img src="https://media.vistal.io/images/blog/excel.png" alt="Figure 2: wrong value in a spreadsheet." width="500" />  
-     
+   ![wrong value in a spreadsheet.](https://media.vistal.io/images/blog/excel.png)  
  _Figure 1: wrong value in a spreadsheet._
 
 Not too bad. Someone might be happy. See, the problem is that a random bit flip can change data entirely. But the type of data matters for us. For some data types it is not really a problem. If we look at a JPEG shot by our smart phone, with a 12MP camera, we have 12,000,000 pixel. If we have a bit flip here we arguable wouldn't really notice the difference, do we? But financial data, for instance, is different.
