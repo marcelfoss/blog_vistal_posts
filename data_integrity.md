@@ -13,7 +13,7 @@ tags = [
 ]
 +++
 
-The problem is that a random bit flip can change data entirely. But the type of data matters for us, with financial data, for instance, it can result in dramatic inaccurate numbers.
+The problem is that a random bit flip can change data entirely. But the type of data matters for us. With financial data, for instance, it can result in dramatically inaccurate numbers.
 
 <!--more-->
 ---
