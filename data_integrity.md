@@ -60,7 +60,7 @@ Next to data collision, if we have two different inputs resulting in the same ch
 
 > MD5: The fastest and shortest generated hash (16 bytes). The probability of just two hashes accidentally colliding is approximately: 1.47*10^-29.
 
-> SHA1: Is generally 20% slower than md5, the generated hash is a bit longer than MD5 (20 bytes). The probability of just two hashes accidentally colliding is approximately: 1.47*10^-29
+> SHA1: Is generally 20% slower than md5, the generated hash is a bit longer than MD5 (20 bytes). The probability of just two hashes accidentally colliding is approximately: 1.47*10^-45
 
 > SHA256: The slowest, usually 60% slower than md5, and the longest generated hash (32 bytes). The probability of just two hashes accidentally colliding is approximately: 4.3*10^-60.[6]
 
@@ -117,3 +117,5 @@ If you want to learn more or need help with this or any other (data)-related top
 * [6] [Gorka Ramirez. (2015) MD5: The broken algorithm. Retrieved on 11. April 2023](https://www.avira.com/en/blog/md5-the-broken-algorithm)
 * [7] [Preshing on Programming. (2011). Hash Collision Probabilities. Retrieved on 11. April 2023](https://preshing.com/20110504/hash-collision-probabilities/)
 * [8] [Marcel Peters. (11.04.2023). Source Code Github Gist. Retrieved on 11. April 2023](https://gist.github.com/marcelfoss/2ab51f3c3917296ebbbbce751d7b1cd5)
+
+_An earlier version of this post stated that MD5 and SHA1 had the same probability of collision which was corrected on 13/04/2023._
